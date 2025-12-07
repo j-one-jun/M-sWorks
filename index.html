@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有限会社エムズ・ワークス - 新デザイン案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- 1. Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+            <a href="index.html" class="flex flex-col items-start">
+                <img src="/images/logo.jpg" alt="有限会社エムズ・ワークス ロゴ" class="h-10">
+                <p class="text-base font-bold text-gray-800 mt-1">有限会社エムズ・ワークス</p>
+                <p class="text-xs text-gray-500">有限会社エムズ・ワークスは調布市にあるダイノック、ガラスフィルム　フィルム工事を専門とする施工会社です。</p>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center text-sm">
+                <a href="service-glass.html" class="text-gray-600 hover:text-blue-700 transition px-2">ガラスフィルム</a>
+                <a href="service-sheet.html" class="text-gray-600 hover:text-blue-700 transition px-2">化粧シート</a>
+                <a href="service-car.html" class="text-gray-600 hover:text-blue-700 transition px-2">車輌ラッピング</a>
+                <a href="service-sign.html" class="text-gray-600 hover:text-blue-700 transition px-2">広告・サイン</a>
+                <a href="#company" class="text-gray-600 hover:text-blue-700 transition px-2">会社概要</a>
+                <a href="#access" class="text-gray-600 hover:text-blue-700 transition px-2">アクセス</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-bold">お問い合わせ</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+            <a href="service-glass.html" class="block py-2 text-gray-600 hover:text-blue-700">ガラスフィルム</a>
+            <a href="service-sheet.html" class="block py-2 text-gray-600 hover:text-blue-700">化粧シート</a>
+            <a href="service-car.html" class="block py-2 text-gray-600 hover:text-blue-700">車輌ラッピング</a>
+            <a href="service-sign.html" class="block py-2 text-gray-600 hover:text-blue-700">広告・サイン</a>
+            <a href="#company" class="block py-2 text-gray-600 hover:text-blue-700">会社概要</a>
+            <a href="#access" class="block py-2 text-gray-600 hover:text-blue-700">アクセス</a>
+            <a href="#contact" class="block py-2 text-blue-600 font-bold">お問い合わせ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section class="h-screen bg-contain bg-no-repeat bg-fixed bg-center text-white flex items-center justify-center"
+            style="background-image: url('/images/TOP.png');">
+            <div class="text-center bg-black/50 p-8 rounded-lg fade-in-target">
+                <h1 class="text-4xl md:text-5xl font-bold">調布市のダイノック・ガラスフィルム・フィルム工事専門</h1>
+                <p class="text-xl md:text-2xl mt-2">有限会社エムズ・ワークス</p>
+            </div>
+        </section>
+
+        <!-- 3. Services Section -->
+        <section id="services" class="bg-white">
+
+            <!-- Service 1: ガラスフィルム施工 -->
+            <!-- A. 背景固定タイトルエリア -->
+            <div class="py-32 bg-fixed bg-cover bg-center relative" style="background-image: url('/images/glass.jpg');">
+                <div class="absolute inset-0 bg-black/60"></div>
+
+                <div
+                    class="relative container mx-auto px-4 flex flex-col items-center justify-center text-center text-white">
+
+                    <h2 class="text-5xl font-bold mb-4 fade-in-target">ガラスフィルム施工</h2>
+                    <h3 class="text-2xl font-bold mb-8 fade-in-target">窓ガラスや玄関ドアの日射調整・防犯</h3>
+
+                    <p class="text-lg leading-loose font-medium mb-16 fade-in-target">
+                        外から見えてしまう窓を何とかしたい<br>
+                        地震の時に割れると不安だから何とかしたい<br>
+                        暗くなるのは嫌だけど夏の紫外線をカットしたい<br>
+                        カーテンが取り付けられない窓の光量を調整したい
+                    </p>
+
+                    <div
+                        class="max-w-5xl w-full bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-12 border border-white/20 fade-in-target">
+                        <h4 class="text-3xl font-bold mb-6">ガラスフィルム施工の特徴</h4>
+                        <p class="text-lg mb-10 leading-relaxed">
+                            ガラスに貼るだけで、飛散防止・防犯効果・紫外線カット・日射調整・プライバシーの保護など、<br class="hidden md:inline">
+                            日常の生活環境の中で様々な役割を果たしてくれます。
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-8 text-left">
+
+                            <div class="bg-black/40 p-6 rounded-lg border-l-4 border-blue-500">
+                                <h5 class="text-xl font-bold mb-3 text-blue-300">飛散防止用フィルム</h5>
+                                <p class="leading-relaxed">
+                                    地震などの災害時に、ガラスが割れた場合でも破片の飛散や落下を防ぎます。<br>
+                                    避難時の怪我や、二次災害のリスクを大幅に軽減します。
+                                </p>
+                            </div>
+
+                            <div class="bg-black/40 p-6 rounded-lg border-l-4 border-red-500">
+                                <h5 class="text-xl font-bold mb-3 text-red-300">防犯用フィルム</h5>
+                                <p class="leading-relaxed">
+                                    ガラスの破壊や貫通を大幅に遅らせることで、侵入を諦めさせる効果があります。<br>
+                                    建物のセキュリティ向上と防犯対策に大きく貢献します。
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 text-center">
+                            <a href="service-glass.html"
+                                class="inline-block bg-blue-500 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition duration-300">さらに詳しく見る</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- B. 施工事例サムネイル -->
+            <div class="container mx-auto px-4 py-8 fade-in-target">
+                <div class="grid grid-cols-2 lg:grid-cols-6 gap-2">
+                    <img src="/images/glass/glass (1).JPG" alt="施工事例1"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/glass/glass (2).JPG" alt="施工事例2"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/glass/glass (3).JPG" alt="施工事例3"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/glass/glass (4).JPG" alt="施工事例4"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/glass/glass (5).JPG" alt="施工事例5"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/glass/glass (6).JPG" alt="施工事例6"
+                        class="aspect-square object-cover rounded w-full">
+                </div>
+            </div>
+
+            <!-- Service 2: 化粧シート施工 -->
+            <!-- A. 背景固定タイトルエリア -->
+            <div class="py-32 bg-fixed bg-cover bg-center relative" style="background-image: url('/images/sheet.jpg');">
+                <div class="absolute inset-0 bg-black/60"></div>
+
+                <div
+                    class="relative container mx-auto px-4 flex flex-col items-center justify-center text-center text-white">
+
+                    <h2 class="text-5xl font-bold mb-4 fade-in-target">化粧シート施工</h2>
+                    <h3 class="text-2xl font-bold mb-8 fade-in-target">建物のリフォームや家財の補修</h3>
+
+                    <p class="text-lg leading-loose font-medium mb-16 fade-in-target">
+                        長年住んでいる家のインテリアを一新したい<br>
+                        穴が開いてしまったドアなど建具を補修したい<br>
+                        紫外線や天候により劣化してしまった玄関扉を低価格で綺麗にしたい<br>
+                        天井の塗装が剥がれてきたので直したい<br>
+                        浴室壁の腐食部分を補修して、低コストでオシャレな浴室に変えたい<br>
+                        劣化してしまった窓枠を新品同様に蘇らせたい
+                    </p>
+
+                    <div
+                        class="max-w-6xl w-full bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-12 border border-white/20 fade-in-target">
+                        <h4 class="text-3xl font-bold mb-6">化粧シート施工の特徴</h4>
+                        <p class="text-lg mb-10 leading-relaxed">
+                            室内・屋外装飾に使用できる耐水・耐久性に優れた粘着剤付きの印刷フィルムです。<br class="hidden md:inline">
+                            防火性能では国土交通省の不燃認定を取得しており、安全性も兼ね備えています。
+                        </p>
+
+                        <div class="grid md:grid-cols-3 gap-6 text-left">
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-yellow-500">
+                                <h5 class="text-xl font-bold mb-3 text-yellow-300">短期間・低コスト</h5>
+                                <p class="leading-relaxed text-sm">
+                                    空間やイメージを変えたい物の印象を、大掛かりな工事なしで劇的に変えることができます。<br>
+                                    交換や塗り替えに比べてコストパフォーマンスに優れています。
+                                </p>
+                            </div>
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-yellow-500">
+                                <h5 class="text-xl font-bold mb-3 text-yellow-300">豊富なデザインバリエーション</h5>
+                                <p class="leading-relaxed text-sm">
+                                    リアルな木目を表現したものから、布目、砂目、メタリック、金箔の風合いまで。<br>
+                                    数百種類以上のラインナップから、理想の空間演出を選べます。
+                                </p>
+                            </div>
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-yellow-500">
+                                <h5 class="text-xl font-bold mb-3 text-yellow-300">あらゆる下地に対応</h5>
+                                <p class="leading-relaxed text-sm">
+                                    下地を選ばず美しくスピーディーに仕上がります。<br>
+                                    大面積や複雑な表面への貼り付けも可能で、建具・家具・扉、さらには愛車のパーツ保護やドレスアップにも使用可能です。
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 text-center">
+                            <a href="service-sheet.html"
+                                class="inline-block bg-yellow-500 text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition duration-300">さらに詳しく見る</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- B. 施工事例サムネイル -->
+            <div class="container mx-auto px-4 py-8 fade-in-target">
+                <div class="grid grid-cols-2 lg:grid-cols-6 gap-2">
+                    <img src="/images/sheet/sheet (1).JPG" alt="施工事例1"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sheet/sheet (2).JPG" alt="施工事例2"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sheet/sheet (3).JPG" alt="施工事例3"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sheet/sheet (4).JPG" alt="施工事例4"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sheet/sheet (5).JPG" alt="施工事例5"
+                        class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sheet/sheet (6).JPG" alt="施工事例6"
+                        class="aspect-square object-cover rounded w-full">
+                </div>
+            </div>
+
+            <!-- Service 3: 車輌ラッピング -->
+            <!-- A. 背景固定タイトルエリア -->
+            <div class="py-32 bg-fixed bg-cover bg-center relative" style="background-image: url('/images/car.JPG');">
+                <div class="absolute inset-0 bg-black/60"></div>
+
+                <div
+                    class="relative container mx-auto px-4 flex flex-col items-center justify-center text-center text-white">
+
+                    <h2 class="text-5xl font-bold mb-4 fade-in-target">車輌ラッピング</h2>
+                    <h3 class="text-2xl font-bold mb-8 fade-in-target">大切な愛車の保護やドレスアップ</h3>
+
+                    <p class="text-lg leading-loose font-medium mb-16 fade-in-target">
+                        ドアミラーやスポイラーだけ色を変えてアクセントにしたい<br>
+                        ボディ全体へのフルラッピングでイメージを一新したい<br>
+                        車体の傷つき防止、腐食対策をしたい<br>
+                        大切な車の塗装面やガラス面を飛び石から守りたい<br>
+                        違う色や柄にしたいけど、売却時や気分で元に戻せるようにしたい
+                    </p>
+
+                    <div
+                        class="max-w-6xl w-full bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-12 border border-white/20 fade-in-target">
+
+                        <div class="grid md:grid-cols-2 gap-8 text-left">
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-purple-500 h-full">
+                                <h4 class="text-2xl font-bold mb-4 text-purple-300 border-b border-white/10 pb-2">
+                                    カーラッピング</h4>
+                                <div class="space-y-4">
+                                    <p class="leading-relaxed">
+                                        塗装とは違い、剥がすことで容易に元に戻せるため、愛車の資産価値を下げずにカラーチェンジが楽しめます。<br>
+                                        バスや電車の広告、カスタムカーショー、レース車両など幅広い分野で利用されています。
+                                    </p>
+
+                                    <div class="bg-white/10 p-4 rounded">
+                                        <h5 class="font-bold text-purple-200 mb-2">豊富なバリエーション</h5>
+                                        <p class="text-sm leading-relaxed">
+                                            純正にはない数百種類を超えるカラーから選択可能です。<br>
+                                            例として、大手メーカー「3M」では全89色以上のフィルムを展開。<br>
+                                            <span class="block mt-2 text-xs text-gray-300">
+                                                ・グロス（艶あり）<br>
+                                                ・マット（艶消し）<br>
+                                                ・サテン（半艶）<br>
+                                                ・メタリック / カーボン など
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-green-500 h-full">
+                                <h4 class="text-2xl font-bold mb-4 text-green-300 border-b border-white/10 pb-2">
+                                    プロテクションフィルム</h4>
+                                <div class="space-y-4">
+                                    <p class="leading-relaxed">
+                                        車の塗装面やガラス面を物理的に保護するために開発された特殊保護フィルムです。<br>
+                                        透明度が高く、貼っていることを感じさせずに愛車を守ります。
+                                    </p>
+
+                                    <div class="bg-white/10 p-4 rounded">
+                                        <h5 class="font-bold text-green-200 mb-2">主な効果・機能</h5>
+                                        <ul class="list-disc list-inside text-sm space-y-2 text-gray-200">
+                                            <li>車体の傷つき防止・腐食対策</li>
+                                            <li>走行中の飛び石などに対する耐チッピング性</li>
+                                            <li>長期的な使用に耐える耐候性・耐摩耗性</li>
+                                            <li>車体を錆や傷から強力にガード</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 text-center">
+                            <a href="service-car.html"
+                                class="inline-block bg-purple-500 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-600 transition duration-300">さらに詳しく見る</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- B. 施工事例サムネイル -->
+            <div class="container mx-auto px-4 py-8 fade-in-target">
+                <div class="grid grid-cols-2 lg:grid-cols-6 gap-2">
+                    <img src="/images/car/car (1).JPG" alt="施工事例1" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/car/car (2).JPG" alt="施工事例2" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/car/car (3).JPG" alt="施工事例3" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/car/car (4).JPG" alt="施工事例4" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/car/car (5).JPG" alt="施工事例5" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/car/car (6).JPG" alt="施工事例6" class="aspect-square object-cover rounded w-full">
+                </div>
+            </div>
+
+            <!-- Service 4: 広告・サイン(看板) -->
+            <!-- A. 背景固定タイトルエリア -->
+            <div class="py-32 bg-fixed bg-cover bg-center relative" style="background-image: url('/images/sign.JPG');">
+                <div class="absolute inset-0 bg-black/60"></div>
+
+                <div
+                    class="relative container mx-auto px-4 flex flex-col items-center justify-center text-center text-white">
+
+                    <h2 class="text-5xl font-bold mb-4 fade-in-target">広告・サイン(看板)</h2>
+                    <h3 class="text-2xl font-bold mb-8 fade-in-target">店舗やオフィスの「顔」を美しく演出</h3>
+
+                    <p class="text-lg leading-loose font-medium mb-16 fade-in-target">
+                        色褪せて古くなった看板をリニューアルして、お店のイメージを良くしたい<br>
+                        通りに面した窓ガラスを広告スペースとして有効活用したい<br>
+                        社用車に社名やロゴを入れて、街中を走るだけで宣伝できるようにしたい<br>
+                        新規オープンに合わせて、看板のデザインから施工まで一括で頼みたい<br>
+                        夜間でも目立つ電飾看板や、高級感のある切り文字を設置したい
+                    </p>
+
+                    <div
+                        class="max-w-6xl w-full bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-12 border border-white/20 fade-in-target">
+                        <h4 class="text-3xl font-bold mb-6">あらゆるサイン製作に対応</h4>
+                        <p class="text-lg mb-10 leading-relaxed">
+                            小さなステッカー1枚から、大型の壁面看板まで。<br class="hidden md:inline">
+                            カッティングシートによるロゴ作成や、インクジェット出力によるフルカラー印刷など、<br class="hidden md:inline">
+                            お客様の目的に合わせて最適なサインプランをご提案します。
+                        </p>
+
+                        <div class="grid md:grid-cols-3 gap-6 text-left">
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-orange-500">
+                                <h5 class="text-xl font-bold mb-3 text-orange-300">看板製作・リフォーム</h5>
+                                <p class="leading-relaxed text-sm">
+                                    古くなった看板の面板交換や、新規看板の設置工事を行います。<br>
+                                    電飾看板（内照式）、突き出し看板、壁面パネルなど、設置場所やご予算に合わせて施工いたします。
+                                </p>
+                            </div>
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-orange-500">
+                                <h5 class="text-xl font-bold mb-3 text-orange-300">ウィンドウサイン</h5>
+                                <p class="leading-relaxed text-sm">
+                                    窓ガラスは最も手軽で効果的な広告スペースです。<br>
+                                    店名やメニューを表示するだけでなく、スリガラス調フィルムと組み合わせることで、店内の目隠しと宣伝を両立できます。
+                                </p>
+                            </div>
+
+                            <div class="bg-black/40 p-6 rounded-lg border-t-4 border-orange-500">
+                                <h5 class="text-xl font-bold mb-3 text-orange-300">マーキング・切り文字</h5>
+                                <p class="leading-relaxed text-sm">
+                                    社用車や営業車に社名ロゴを貼る「マーキング」により、車両を動く広告塔に変身させます。<br>
+                                    また、オフィスの入り口や受付に、立体的で高級感のある「切り文字（カルプ文字）」の製作も可能です。
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 text-center">
+                            <a href="service-sign.html"
+                                class="inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition duration-300">さらに詳しく見る</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- B. 施工事例サムネイル -->
+            <div class="container mx-auto px-4 py-8 fade-in-target">
+                <div class="grid grid-cols-2 lg:grid-cols-6 gap-2">
+                    <img src="/images/sign/sign (1).jpg" alt="施工事例1" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sign/sign (2).jpg" alt="施工事例2" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sign/sign (3).jpg" alt="施工事例3" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sign/sign (4).jpg" alt="施工事例4" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sign/sign (5).jpg" alt="施工事例5" class="aspect-square object-cover rounded w-full">
+                    <img src="/images/sign/sign (6).jpg" alt="施工事例6" class="aspect-square object-cover rounded w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Company/Access Section -->
+        <section id="company" class="py-32 bg-fixed bg-cover bg-center relative"
+            style="background-image: url('images/working.png');">
+
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <div class="relative container mx-auto px-4">
+
+                <div class="max-w-4xl ml-auto lg:mr-8">
+
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white drop-shadow-md fade-in-target">会社概要・アクセス
+                    </h2>
+
+                    <div
+                        class="mb-16 bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-gray-200 fade-in-target">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">ご挨拶</h3>
+                        <p class="leading-loose text-gray-700">
+                            この度は、当社のサイトにお越しいただき、誠にありがとうございます。<br>
+                            当社は、ダイノックフィルムを中心に、ガラスフィルム・車両マーキング・サイン製作など、内外装のフィルム工事から、屋内外の広告フィルム工事を主に手がけております。<br><br>
+                            私たちが持つ技術とサービスで、お客様に喜んでいただければ幸いです。<br>
+                            お住まい・オフィス・店舗などの内装や外装でお悩みの方、サイン・車両マーキングなどでお困りのことがありましたら、お気軽に当社へご相談ください。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-lg overflow-hidden mb-16 fade-in-target">
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">社名</div>
+                            <div class="p-4">有限会社エムズ・ワークス</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">適格請求書発行<br>事業者登録番号</div>
+                            <div class="p-4 flex items-center">T5-0124-0201-0554</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">代表者</div>
+                            <div class="p-4">村澤 健太</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">本社所在地</div>
+                            <div class="p-4">
+                                〒182-0016 東京都調布市佐須町2-1-2<br>
+                                <a href="#access"
+                                    class="text-blue-600 underline hover:text-blue-800 text-sm mt-1 inline-block">▼
+                                    地図を見る</a>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">連絡先</div>
+                            <div class="p-4">
+                                TEL. 042-482-1287<br>
+                                FAX. 042-485-9090
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">受付時間</div>
+                            <div class="p-4">
+                                平日 9:00～17:00<br>
+                                <span class="text-sm text-gray-600">定休日：土日祝 (※工事は休まず実施しております)</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">URL</div>
+                            <div class="p-4">
+                                <a href="http://www.mmm-works.co.jp" target="_blank"
+                                    class="text-blue-600 hover:underline">http://www.mmm-works.co.jp</a>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">資本金</div>
+                            <div class="p-4">300万円</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">設立</div>
+                            <div class="p-4">1991年</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">従業員数</div>
+                            <div class="p-4">12名（2022年4月現在）</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">取引銀行</div>
+                            <div class="p-4">
+                                きらぼし銀行 調布支店<br>
+                                多摩信金 調布支店<br>
+                                西武信金 柴崎駅前支店<br>
+                                みずほ銀行 調布支店
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] border-b border-gray-300">
+                            <div class="bg-gray-100 p-4 font-bold flex items-center">主な取り扱い製品</div>
+                            <div class="p-4">
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>3Mジャパン (ダイノック / ファサラ)</li>
+                                    <li>サンゲツ (リアテック)</li>
+                                    <li>シーアイ化成 (ベルビアン)</li>
+                                    <li>リンテック (ルミクール)</li>
+                                    <li>リンテックサインシステム (パロア)</li>
+                                    <li>中川ケミカル (ノックス＆タフカル / フォグラス)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="access" class="bg-white/95 backdrop-blur-sm p-6 rounded-lg shadow-lg fade-in-target">
+                        <h3 class="text-xl font-bold mb-4 border-l-4 border-blue-700 pl-3">アクセス</h3>
+                        <div
+                            class="h-96 bg-gray-300 rounded-lg flex items-center justify-center relative overflow-hidden group">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.713793936273!2d139.5522743!3d35.6594225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f03ea1be9e17%3A0xe0abb786f5564b28!2z44CSMTgyLTAwMTYg5p2x5Lqs6YO96Kq_5biD5biC5L2Q6aCI55S677yS5LiB55uu77yR4oiS77yS!5e0!3m2!1sja!2sjp!4v1764427416027!5m2!1sja!2sjp"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                class="absolute inset-0 grayscale group-hover:grayscale-0 transition duration-500">
+                            </iframe>
+                            <div
+                                class="z-10 bg-white/80 p-4 rounded text-center pointer-events-none group-hover:opacity-0 transition">
+                                <p class="font-bold text-gray-700">Google Mapを読み込み中...</p>
+                            </div>
+                        </div>
+                        <p class="mt-2 text-right">
+                            <a href="https://goo.gl/maps/YOUR_MAP_LINK_HERE" target="_blank"
+                                class="text-blue-600 hover:underline">Google Mapで見る →</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto py-16 px-4">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold">お問い合わせ</h3>
+                <p class="text-gray-300 mt-2">フィルム施工に関するご相談、お見積もりはお気軽にどうぞ。</p>
+            </div>
+            <div class="text-center">
+                <a href="tel:042-482-1287"
+                    class="inline-block bg-blue-600 text-white font-bold text-lg py-4 px-12 rounded-full hover:bg-blue-500 transition duration-300">
+                    <svg class="inline-block w-6 h-6 mr-2 -mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                        </path>
+                    </svg>
+                    お電話でお問い合わせ
+                </a>
+                <p class="mt-4 text-gray-400">TEL. 042-482-1287 (平日 9:00～17:00)</p>
+            </div>
+            <div class="border-t border-gray-700 mt-16 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 M'sWorks Co.,Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
